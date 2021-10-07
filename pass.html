@@ -36,5 +36,31 @@ function processPhrase(){
     }
 }
 </script>
+<div>
+    <img src="Deer.jpg" height="200" width="200" onclick=" newImage()" id="image">
+    <script>
+        var usingImage = 1
+
+        function newImage() {
+            switch (usingImage) {
+                case 1:
+                    document.getElementById("image").src = "Deer.jpg"
+                    usingImage = 2
+                    //img.src = "Monkey.jpg"
+                    break
+                case 2:
+                    // code block
+                    document.getElementById("image").src = "Monkey.jpg"
+                    usingImage = 3
+                    break
+                case 3:
+                    // code block
+                    document.getElementById("image").src = "Sheep.jpg"
+                    usingImage = 1
+                    break
+            }
+        }
+    </script>
+</div>
 </body>
 </html> 
